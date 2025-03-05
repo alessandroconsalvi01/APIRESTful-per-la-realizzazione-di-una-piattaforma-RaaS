@@ -27,13 +27,13 @@ Aprire un nuovo terminale e spostarsi nella cartella contenente i file del proge
 ### 3. Test con Postman
 Aprire postman e provare ad inviare richieste HTTP al robot per verificare il corretto funzionamento dell'API. Per fare ciò è molto utile visualizzare il comportamento del robot in seguito alla richiesta su GAZEBO GUI. E' molto importante prima di effettuare la richiesta accertarsi su quale porta è stato avviato il server e con quale metodo HTTP deve essere effettuata la richiesta. 
 
-# Esempio con battery.py
-## 1. Avvio di ROS 2, Gazebo e Rviz2 come descritto precedentemente
-## 2. Avvio del server flask
+## Esempio con battery.py
+### 1. Avvio di ROS 2, Gazebo e Rviz2 come descritto precedentemente
+### 2. Avvio del server flask
 Aprire un nuovo terminale e spostarsi nella cartella contenente i file del progetto:
 `cd <percorso_della_cartella>`
 `python3 battery.py`
-## 3. Test con Postman
+### 3. Test con Postman
 Il metodo HTTP di questa azione è GET, il server verrà avviato sulla porta 5000, quindi l'URI giusto per effettuare la richiesta sarà http://localhost:5000/battery_status. Per concludere inviare la richiesta con il tasto Send e attendere la risposta.
 
 N.B. Negli esempi in cui bisogna inserire parametri per far si che la richiesta venga inviata correttamente, in Postman è necessario inserire i parametri nella sezione body, e poi nella sottosezione raw è possibile inserire i parametri in formato JSON.
